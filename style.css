@@ -1,0 +1,478 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+/*styles for header*/
+.header-content {
+    background-color: #F5F5F5;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 113px;
+    padding-right: 113px;
+    padding-top: 34px;
+}
+.header-adressbook:hover {         
+    cursor: pointer;         
+    transform: scale(1.1);
+}
+/*styles for main*/
+.main-top {
+    background: rgb(245,245,245);
+    background: linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(248,248,248,1) 31%, rgba(249,249,249,1) 41%, rgba(237,241,245,1) 51%, rgba(239,242,245,1) 60%, rgba(221,232,242,1) 68%, rgba(185,212,233,1) 100%);
+    margin: 0 auto;
+}
+.main-wrap {
+    display: flex;
+    padding-top:100px;
+    padding-bottom: 93px;
+    padding-left: 113px;
+    padding-right: 113px;
+}
+.main-title {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 74px;
+    color: #1F3F68;
+    letter-spacing: 0.04em;
+    font-style: normal;
+}
+.main-title:hover {
+    color: #5A98D0;
+    -webkit-text-shadow: #555555 1px 1px 1px;         
+    -moz-text-shadow: #555555 1px 1px 1px;           
+    text-shadow: #555555 1px 1px 1px;                
+    
+}
+.main-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    padding-top: 32px;
+    letter-spacing: 0.05em;
+    max-width: 425px;
+    padding-bottom: 71px;
+}
+.main-btn {
+    background-color: #5A98D0;
+    color: aliceblue;
+    border: 3px #5a98d0 solid;
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    transition-duration: 0.3s; 
+}
+.main-btn:hover {
+    background-color:aliceblue;
+    color:#5A98D0;
+	text-decoration:none;
+}
+
+/*styles for benefits*/
+.benefits{
+    background-color: #F5F5F5;
+    margin: 0 auto;
+}
+
+.benefits-title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    padding-top: 46px;
+    
+}
+.benefits-card {
+    display: flex;
+    justify-content: space-between ;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+}
+.benefits-card-item {
+    background-color: #FFFFFF;
+    width: 380px;
+    box-sizing: border-box;
+    box-shadow: 40px 20px 20px 20px #DFE8EF;
+    border: 1px #F5F5F5 solid;
+    border-radius: 7px;
+    padding-bottom: 45px;
+    transition-duration: 0.3s; 
+
+    display: flex;
+    flex-direction: column; 
+}
+.benefits-card-item:hover {       
+    transform: scale(1.15);       
+}
+.benefits-img {
+    box-sizing: border-box;
+    padding-top: 45px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+    transition-duration: 0.5s; 
+}
+.benefits-img:hover {
+    transform: rotateY(-180deg);      
+
+}
+.benefits-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    padding-left: 38px;
+    padding-right: 52px;
+}
+.benefits-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+    padding-left: 38px;
+    padding-right: 52px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.benefits-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    padding-left: 38px;
+}
+.benefits-link:hover {         
+    color: #1F3F68;      
+}
+
+/*styles for projects*/
+.projects {
+    background-color: #F5F5F5;
+    margin: 0 auto;
+}
+.projects-title {
+    padding-top: 45px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em; 
+    color: #000000;
+}
+.projects-text {
+    max-width: 900px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+    padding-top: 32px;
+    padding-bottom: 65px;
+    padding-left: 250px;
+}
+.projects-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+	padding-bottom: 50px;
+	
+    
+}
+.projects-card-top {
+    position: relative;
+}
+.project-card-bottom {
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    transition-duration: 0.3s;
+}
+.project-img:hover {               
+    filter: blur(2px);
+    transform: scale(1.015);
+}
+
+ .projects-subtitle1 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    right: 76px;
+    top: 65px;
+}
+.projects-subtitle2, .projects-subtitle3 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    left: 38px;
+    top: 32px;
+}
+
+/*styles for footer*/
+.footer, .footer-aside {
+    background-color: #316099;
+    margin: 0 auto;
+}
+.footer {
+    border-bottom: 1px #cdc9c9 solid;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;      
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding-top: 91px;
+    padding-left: 113px;
+}
+.footer-title:hover {            
+    color: #5A98D0;
+}
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+    padding-left: 113px;
+    padding-top: 32px;
+    padding-bottom: 96px;
+}
+.footer-btn {
+    width: 240px;
+    height: 56px;
+    background: #5A98D0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    border: 1px #5A98D0 solid;
+    border-radius: 2px;
+    margin-right: 115px;
+    transition-duration: 0.3s;  
+    cursor: pointer;             
+}
+
+.footer-btn:hover {             
+    background: #FFFFFF;      
+    color: #5A98D0;
+    border-radius: 10px;
+}
+
+.footer-list {
+    padding-top: 62px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    
+}
+.footer-list-item,
+.footer-list-item-tel, 
+.footer-list-item-mail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 250px;
+    text-decoration: none;
+}
+.footer-list-item:hover,
+.footer-list-item-tel:hover,
+.footer-list-item-mail:hover {
+    color: #5a98d0;        
+    cursor: pointer;    
+	text-decoration:none;
+}
+
+.footer-info,
+.footer-copyright {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+    padding-left: 113px;
+}
+.footer-info {
+    padding-top: 64px;
+}
+.footer-copyright {
+    padding-bottom: 38px;
+}
+
+
+/*for tablet*/
+@media (max-width: 1024px) {
+    .header-wrap {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .main-wrap {
+        padding-left: 32px;
+        padding-right: 32px;
+        align-items: flex-end;
+    }
+    .img-top {
+        width: 270px;
+    }
+    .benefits-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefits-card-item {
+        margin-top: 32px;
+    }
+    .benefits-title {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .footer-list {
+        flex-direction: column;
+        }
+    .footer-list-item {
+        padding-bottom: 20px;}
+        
+    
+    .projects-card-item1 {
+       margin-left: 35px;
+       margin-right: 35px;
+    }
+    .projects-text {
+        padding-left: 0;
+    }
+    .footer-content {
+        justify-content: center;
+       }
+    .footer-btn {
+        margin-left: 21px;
+    }
+    }
+
+
+/*for mobile*/
+    @media (max-width: 540px) {
+        .main-wrap {
+            padding-left: 32px;
+            padding-right: 32px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: center;}
+
+        .main-title {
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            letter-spacing: 0.04em;
+        }
+
+        .main-img {
+            display: none;
+        }
+
+        .benefits-title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .benefits-card-item {
+            width: 300px;
+            box-shadow: 10px 10px 10px 10px #dfe8ef;
+            margin-left: 0px;
+        }
+        .benefits-img {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .projects-card {
+            flex-direction: column;
+        }
+    
+        .project-img {
+           width: 100%;
+        }
+        .projects-subtitle1 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            padding-top: 32px;
+            padding-right: 35px;
+        }
+        .projects-subtitle2,
+        .projects-subtitle3 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .footer-content {
+            flex-direction: column;
+        }
+        .footer-title {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            padding-left: 0px;
+        }
+        .footer-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;  
+            text-align: center;
+            letter-spacing: 0.05em;
+            padding-left: 0px;
+        }
+        .footer-btn {
+            margin-bottom: 40px;
+        }
+        .footer-list {
+            padding-left: 32px;
+        }
+        .footer-info,
+        .footer-copyright {
+            text-align: center;
+            padding-left: 0px;
+        }
+    }
