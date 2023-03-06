@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -285,9 +286,10 @@ body {
     color: #FFFFFF;
     border: 1px #5A98D0 solid;
     border-radius: 2px;
-    margin-right: 115px;
     transition-duration: 0.3s;  
-    cursor: pointer;             
+    cursor: pointer;  
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 .footer-btn:hover {             
@@ -353,7 +355,7 @@ body {
         align-items: flex-end;
     }
     .img-top {
-        width: 270px;
+        max-width: 362px;
     }
     .benefits-card {
         flex-direction: column;
@@ -384,14 +386,48 @@ body {
     .footer-content {
         justify-content: center;
        }
-    .footer-btn {
-        margin-left: 21px;
     }
+@media (max-width: 760px) {
+        .container {
+            max-width: 560px;
+        }
+        .img-top {
+            max-width: 235px;
+        }
+        .footer-content {
+            flex-direction: column;
+        }
+        .footer-title {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            padding-left: 0px;
+        }
+        .footer-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;  
+            text-align: center;
+            letter-spacing: 0.05em;
+            padding-left: 0px;
+        }
+        .footer-btn {
+            margin-bottom: 40px;
+        }
+        .footer-list {
+            padding-left: 32px;
+        }
+        .footer-info,
+        .footer-copyright {
+            text-align: center;
+            padding-left: 32px;
+        }
     }
 
 
 /*for mobile*/
-    @media (max-width: 540px) {
+    @media (max-width: 691px) {
         .main-wrap {
             padding-left: 32px;
             padding-right: 32px;
@@ -410,7 +446,6 @@ body {
         .main-img {
             display: none;
         }
-
         .benefits-title {
             font-size: 24px;
             line-height: 28px;
@@ -445,34 +480,25 @@ body {
             font-size: 16px;
             line-height: 19px;
         }
-
-        .footer-content {
-            flex-direction: column;
-        }
-        .footer-title {
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 28px;
-            text-align: center;
-            padding-left: 0px;
-        }
-        .footer-text {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;  
-            text-align: center;
-            letter-spacing: 0.05em;
-            padding-left: 0px;
-        }
-        .footer-btn {
-            margin-bottom: 40px;
-        }
-        .footer-list {
-            padding-left: 32px;
-        }
-        .footer-info,
-        .footer-copyright {
-            text-align: center;
-            padding-left: 0px;
-        }
     }
+ @media (max-width: 491px) {
+	 .container {
+		 max-width: 361px
+	 }
+	 .benefits-card-item {
+    	 width: 269px;
+    	 box-shadow: 3px 1px 12px 7px #dfe8ef;
+	 }
+	 .projects-text {
+		 padding-right: 10px;
+    	 padding-left: 10px;
+	 }
+	 .footer-wrap {
+		 padding-right: 10px;
+    	 padding-left: 10px;
+	 }
+	 .footer-btn {
+		 margin-left: 0px;
+	 }
+	
+}
